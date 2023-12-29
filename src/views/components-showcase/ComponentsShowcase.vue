@@ -1,13 +1,11 @@
-<script setup>
-
-</script>
-
 <template>
-  <div>
-    components
-  </div>
+  <form-elements/>
 </template>
+<script>
+import FormElements from "@/views/components-showcase/form-elements/FormElements.vue";
 
-<style scoped lang="scss">
-
-</style>
+export default {
+  name: "ComponentsShowcase",
+  components: {FormElements},
+}
+</script>

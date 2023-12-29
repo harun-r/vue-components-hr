@@ -1,5 +1,5 @@
 {
-  "name": "vue-components-hr",
+  "name": "vue-components",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -17,6 +18,6 @@
     "postcss": "^8.4.31",
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
-    "vite": "^4.4.11"
+    "vite": "5.0.10"
   }
 }
