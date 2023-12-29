@@ -4,6 +4,7 @@ import AppInput from "@/components/forms/app-input/AppInput.vue";
 import AppCheckbox from "@/components/forms/app-checkbox/AppCheckbox.vue";
 import AppRadio from "@/components/forms/app-radio/AppRadio.vue";
 import AppTextarea from "@/components/forms/app-textarea/AppTextarea.vue";
+import AppFile from "@/components/forms/app-file/AppFile.vue";
 
 const inputModel = ref('Harun')
 const textareaValue = ref('Harun')
@@ -55,6 +56,11 @@ const radioOptions = ref([
       <span class="font-sans text-dark font-medium bg-gray-300 py-1 px-2 rounded block mt-2">Value : {{
           textareaValue
         }}</span>
+    </div>
+    <div class="mb-4">
+
+      <app-file/>
+
     </div>
   </div>
 </template>
