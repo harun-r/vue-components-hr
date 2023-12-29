@@ -3,8 +3,10 @@ import {ref} from "vue";
 import AppInput from "@/components/forms/app-input/AppInput.vue";
 import AppCheckbox from "@/components/forms/app-checkbox/AppCheckbox.vue";
 import AppRadio from "@/components/forms/app-radio/AppRadio.vue";
+import AppTextarea from "@/components/forms/app-textarea/AppTextarea.vue";
 
 const inputModel = ref('Harun')
+const textareaValue = ref('Harun')
 const checkboxModel = ref(false)
 
 const radioSelect = ref('option1')
@@ -41,6 +43,17 @@ const radioOptions = ref([
       <app-radio :options="radioOptions" name="options" v-model="radioSelect"/>
       <span class="font-sans text-dark font-medium bg-gray-300 py-1 px-2 rounded block mt-2">Value : {{
           radioSelect
+        }}</span>
+    </div>
+
+    <div class="mb-4">
+
+      <app-textarea
+          :label="'Textarea'"
+          v-model="textareaValue"
+        />
+      <span class="font-sans text-dark font-medium bg-gray-300 py-1 px-2 rounded block mt-2">Value : {{
+          textareaValue
         }}</span>
     </div>
   </div>
